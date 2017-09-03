@@ -8,7 +8,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at http://localhost:8080/modules/test.html
 npm run dev
 
 # build for production with minification
@@ -25,14 +25,23 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ``` bash
 # 页面目录
+    webpack
+      |---build
+      |---config
+      |---dist
+      |---src
+        |---assets 资源
+        |---common 公共js/css资源目录
+        |---components 公共组件
+        |---mock mock数据
+        |---modules 各个页面模块
+          |---test    test模块
+            |---component 组件
+            |---store vuex目录
+            |---router 路由文件
+            |---test.html
+            |---test.js
+            |---test.vue
+
 在src/modules/目錄下建立xxx文件夾，在里面建立xxx.js与xxx.html，注意与目录名称相同，参考test文件路径的格式
-
-# 路由的建立（后续补充）
-npm run dev
-
-# vuex的应用
-npm run build
-
-# 公共组件与业务的组件的拆分
-npm run build --report
 ```
