@@ -39,9 +39,10 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
             |---component 组件
             |---store vuex目录
             |---router 路由文件
-            |---test.html
-            |---test.js
-            |---test.vue
+            |---test.html html模板
+            |---test.js   入口文件（与目录文件名相同）
+            |---APP.vue  vue组件的入口
 
 在src/modules/目錄下建立xxx文件夾，在里面建立xxx.js与xxx.html，注意与目录名称相同，参考test文件路径的格式
+有关mock数据，由于mock数据仅仅是在本地开发中用到，因此建立了一个全局变量IS_DEV来判断是否本地开发环境，进而决定是否加载mock数据，参考test/test.js
 ```

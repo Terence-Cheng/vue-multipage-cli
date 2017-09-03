@@ -26,6 +26,12 @@ const webpackConfig = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'src': path.resolve(__dirname, '../src'),
+      'api':path.resolve(__dirname,'../src/api'),
+      'assets': path.resolve(__dirname, '../src/assets'),
+      'common': path.resolve(__dirname,'../src/common'),
+      'components': path.resolve(__dirname, '../src/components'),
+      'vux-components': 'vux/src/components/'
     },
     symlinks: false
   },
